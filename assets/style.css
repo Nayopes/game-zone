@@ -5,9 +5,7 @@
     font-family: 'Alegreya Sans', Arial, sans-serif;
     text-transform: uppercase;
 }
-html {
-    font-size: 62.5%;
-}
+
 body {
     color: black;
     letter-spacing: .18em;
@@ -185,7 +183,7 @@ h3 {
 }
 @media screen and (max-width: 400px) {
        html {
-        font-size: 86%;
+        font-size: 90%;
     }
     .open-menu ~ nav {
         padding: 20px 0;
