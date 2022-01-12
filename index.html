@@ -1,50 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Scrolling | Webdevtrick.com</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
     <link rel="stylesheet" href="assets/style.css">
-    <title>Nayopes</title>
 </head>
-
 <body>
 
-    <div id="particles-js">
-
-        <div class="count-particles">
-            <div class="main">
-                <header>
-                    <ul>
-                        <li>
-                            <a>Home</a>
-                        </li>
-                        <li>
-                            <a>Games</a>
-                        </li>
-                        <li>
-                            <a>Gallery</a>
-                        </li>
-                        <li>
-                            <a>About Us</a>
-                        </li>
-                        <li>
-                            <a>Contact Us</a>
-                        </li>
-                    </ul>
-                </header>
-            </div>
-
-        </div>
-
+<header>
+    <div class="header-top clearfix">
+        <h1 class="l-left"><a href="#home">LOGO</a></h1>
+        <a class="l-right toggle-menu" href="#">
+            <i></i>
+            <i></i>
+            <i></i>
+        </a>
     </div>
 
-    <footer>
+    <nav class="hide">
+        <ul id="menu">
+            <li data-menuanchor="home">
+                <a href="#home" title="First Section">HOME</a>
+            </li>
+            <li data-menuanchor="games">
+                <a href="#games" title="Second Section">GAMES</a>
+            </li>
+            <li data-menuanchor="gallery">
+                <a href="#gallery" title="Second Section">GALLERY</a>
+            </li>
+            <li data-menuanchor="contacts">
+                <a href="#contacts" title="Fourth Section">CONTACTS</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    </footer>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="assets/dom.js"></script>
+<div id="fullpage">
+
+    <section class="vertical-scrolling">
+        <h2>HOME</h2>
+        <h3>This is the home section</h3>
+    </section>
+
+    <section class="vertical-scrolling">
+        <h2>GAMES</h2>
+        <h3>This is the games section</h3>
+    </section>
+
+    <section class="vertical-scrolling">
+        <h2>GALLERY</h2>
+        <h3>This is the gallery section</h3>
+    </section>
+
+    <section class="vertical-scrolling">
+        <h2>CONTACTS</h2>
+        <h3>This is the contacts section</h3>
+    </section>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script  src="assets/dom.js"></script>
+
 </body>
-
 </html>
