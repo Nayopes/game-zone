@@ -184,13 +184,16 @@ h3 {
     }
 }
 @media screen and (max-width: 400px) {
-    html {
-        font-size: 50%;
+       html {
+        font-size: 86%;
     }
     .open-menu ~ nav {
         padding: 20px 0;
     }
     nav li a {
         padding: 3px;
+    }
+    #fp-nav{
+        display: none;
     }
 }
