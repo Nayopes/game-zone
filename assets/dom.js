@@ -6,7 +6,7 @@ $header_top.find('a').on('click', function() {
 });
 
 $('#fullpage').fullpage({
-    sectionsColor: ['#3dcfa1', '#348899', '#ff8b20', '#ff5757', '#ffd03c'],
+    sectionsColor: ['#1aaa82', '#1f7889', '#03262f', '#081634', ''],
     sectionSelector: '.vertical-scrolling',
     navigation: true,
     slidesNavigation: true,
@@ -14,19 +14,18 @@ $('#fullpage').fullpage({
     anchors: ['home', 'games', 'gallery', 'contacts'],
     menu: '#menu',
 
-    afterLoad: function(anchorLink, index) {
-        $header_top.css('background', 'rgba(0, 47, 77, .3)');
-        $nav.css('background', 'rgba(0, 47, 77, .25)');
-        if (index == 5) {
-            $('#fp-nav').hide();
-        }
-    },
+    // afterLoad: function(anchorLink, index) {
+    //     $header_top.css('background', 'rgba(0, 47, 77, .3)');
+    //     $nav.css('background', 'rgba(0, 47, 77, .25)');
+    //     if (index == 5) {
+    //         $('#fp-nav').hide();
+    //     }
+    // },
 
     onLeave: function(index, nextIndex, direction) {
         if(index == 4) {
             $('#fp-nav').show();
         }
     },
-
 
 });
