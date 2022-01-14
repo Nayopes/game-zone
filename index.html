@@ -1,104 +1,104 @@
 <!--Code By Webdevtrick ( https://webdevtrick.com )-->
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Game Zone</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="header-top clearfix">
-        <h1 class="l-left"><a href="#home">LOGO</a></h1>
-        <a class="l-right toggle-menu" href="#">
-            <i></i>
-            <i></i>
-            <i></i>
-        </a>
+    <header>
+        <div class="header-top clearfix">
+            <h1 class="l-left"><a href="#home">LOGO</a></h1>
+            <a class="l-right toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+        </div>
+
+        <nav class="hide">
+            <ul id="menu">
+                <li data-menuanchor="home">
+                    <a href="#home" title="First Section">HOME</a>
+                </li>
+                <li data-menuanchor="games">
+                    <a href="#games" title="Second Section">GAMES</a>
+                </li>
+                <li data-menuanchor="gallery">
+                    <a href="#gallery" title="Second Section">GALLERY</a>
+                </li>
+                <li data-menuanchor="contacts">
+                    <a href="#contacts" title="Fourth Section">CONTACTS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="smm-nav">
+        <p>follow us</p>
+        <div class="smm-line"></div>
+        <div class="media-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
     </div>
 
-    <nav class="hide">
-        <ul id="menu">
-            <li data-menuanchor="home">
-                <a href="#home" title="First Section">HOME</a>
-            </li>
-            <li data-menuanchor="games">
-                <a href="#games" title="Second Section">GAMES</a>
-            </li>
-            <li data-menuanchor="gallery">
-                <a href="#gallery" title="Second Section">GALLERY</a>
-            </li>
-            <li data-menuanchor="contacts">
-                <a href="#contacts" title="Fourth Section">CONTACTS</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <div id="fullpage">
 
+        <section class="vertical-scrolling">
+            <h2>HOME</h2>
+            <h3>This is the home section</h3>
+        </section>
 
-<div id="fullpage">
+        <section class="vertical-scrolling">
+            <h2>GAMES</h2>
+            <h3>This is the games section</h3>
+        </section>
 
-    <section class="vertical-scrolling">
-        <h2>HOME</h2>
-        <h3>This is the home section</h3>
-        <div class="smm-nav">
-            <p>follow us</p>
-            <div class="smm-line"></div>
-            <div class="media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
+        <section class="vertical-scrolling">
+            <h2>GALLERY</h2>
+            <h3>This is the gallery section</h3>
+        </section>
+
+        <section class="vertical-scrolling" id="contact" style="background: url('assets/img/game2.jpg') no-repeat;">
+            <h2 class="contact-title">CONTACTS</h2>
+            <div class="contacts-main">
+                <div>
+                    <form>
+                        <div class="nameEmail"> 
+                            <div class="name-form">
+                                <input type="text" name="name" class="name-input">
+                                <label for="name" class="name-label">Your Name</label>
+                            </div>
+                            <div class="email-form">
+                                <input type="email" name="email" class="email-input">
+                                <label for="email" class="email-label">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="message-form">
+                            <textarea name="name" class="message-input"></textarea>
+                            <label for="name" class="name-label">Your Message</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <div class="phone-address">
+                        <p><i class="fas fa-map-marker-alt"></i>Garegin Nzhdeh Str 2</p>
+                        <p><i class="fas fa-phone-alt"></i>374 43 32 58 56</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.32734007005104!2d44.48449699714721!3d40.150955064928105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abdb3bc054ac1%3A0x86d5d87813d8c141!2sPanda%20Game%20Zone!5e0!3m2!1sen!2s!4v1642157915813!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="vertical-scrolling">
-        <h2>GAMES</h2>
-        <h3>This is the games section</h3>
-        <div class="smm-nav">
-            <p>follow us</p>
-            <div class="smm-line"></div>
-            <div class="media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="vertical-scrolling">
-        <h2>GALLERY</h2>
-        <h3>This is the gallery section</h3>
-        <div class="smm-nav">
-            <p>follow us</p>
-            <div class="smm-line"></div>
-            <div class="media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="vertical-scrolling" id="contact" style="background: url('assets/game2.jpg') no-repeat;">
-        <h2 class="contact-title">CONTACTS</h2>
-        <div class="smm-nav">
-            <p>follow us</p>
-            <div class="smm-line"></div>
-            <div class="media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
-<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
-<script  src="assets/dom.js"></script>
+        </section>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <script src="assets/dom.js"></script>
 </body>
+
 </html>
