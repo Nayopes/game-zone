@@ -6,7 +6,7 @@
 }
 body {
     color: black;
-    letter-spacing: .18em;
+    letter-spacing: 2px;
 }
 a {
     text-decoration: none;
@@ -31,7 +31,7 @@ ul, li {
 }
 .end {
     margin-top: 30px;
-    font-size: 3em;
+    font-size: 48px;
     font-weight: bold;
     opacity: 0;
     -webkit-transform: translateY(300px);
@@ -43,7 +43,7 @@ ul, li {
 }
 .header-top {
     background: rgba(9, 14, 19, 0.15);
-    padding: 4px 20px;
+    padding: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,7 +62,7 @@ h1 a {
 .toggle-menu {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: none;
     position: relative;
     top: 10px;
 }
@@ -111,7 +111,7 @@ nav {
     opacity: 1;
     z-index: 15;
     height: calc(90vh - 70px);
-    margin-top: 8px;
+    margin-top: 40px;
 }
 nav ul {
     padding: 0 70px;
@@ -122,7 +122,7 @@ nav li {
     margin: 0 30px;
 }
 nav li a {
-    font-size: 2em;
+    font-size: 32px;
     display: block;
     padding: 30px;
     text-align: center;
@@ -138,14 +138,14 @@ nav li a:hover {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 64px;
     transform: scale(1, 1.6);
     font-weight: inherit;
     text-align: center;
 }
 h3 {
     font-weight: 300;
-    font-size: 2.8em;
+    font-size: 45px;
     margin-top: 20px;
     text-align: center;
 }
@@ -170,11 +170,12 @@ h3 {
 #fp-nav.right {
     right: 24px !important;
 }
-
 .fp-tableCell {
     vertical-align: baseline;
     padding: 130px 0;
 }
+
+
 .smm-nav{
     position: fixed;
     z-index: 1;
@@ -200,8 +201,15 @@ h3 {
     margin: 0 10px;
 }
 .svg-inline--fa {
-    width: 1.625em;
+    width: 26px;
     margin: 0 4px;
+}
+
+footer{
+    color: #fff;
+    position: absolute;
+    left: 48%;
+    top: 96vh;
 }
 
 /*      CONTACT      */
@@ -291,11 +299,73 @@ h3 {
 
 
 
+@media (max-width: 1600px)  {
+    /*      CONTACT      */
+    .vertical-scrolling:last-child{
+        background-position-y: -74px !important;
+    }
+    .contacts-main{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 1390px) {
+    /*      CONTACT      */
+    .vertical-scrolling:last-child{
+        background-position-y: 0 !important;
+        background-position-x: -200px !important;
+    }
+    .contact-title {
+        margin-top: -20px;
+    }
+    .contacts-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map-container {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1000px)  {
+    /*      header      */
+    #menu{
+        flex-direction: column;
+        align-items: end;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        margin: 4px 0;
+    }
+    nav li a {
+        width: 160px;
+        padding: 4px;
+    }
+    .toggle-menu {
+
+        display: inline-block;
+    }
+    /*      CONTACT      */
+    .vertical-scrolling:last-child{
+        background-position-x: -330px !important;
+    }
+}
+@media (max-width: 800px)  {
+    /*      CONTACT      */
+    .vertical-scrolling:last-child{
+        background-position-x: -460px !important;
+    }
+}
 
 
-
-
-
+/*@media (max-width: 1200px) {
+    .contacts-main{
+        flex-direction: column;
+    }
+} */
 
 /*@media (max-width: 767px) {*/
 /*    nav ul {*/
