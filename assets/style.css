@@ -11,7 +11,7 @@ body{
     background: #000;
 }
 header{
-    background: rgba(9, 14, 19, 0.15);
+    background: rgba(9, 14, 19, 0.9);
     color: white;
     position: fixed;
     z-index: 4;
@@ -33,7 +33,11 @@ header a {
     margin: 0 auto;
     align-items: center;
 }
-
+.burgerMenu{
+    display: none;
+    color: #fff;
+    font-size: 40px;
+}
 #menu{
     display: flex;
     justify-content: flex-end;
@@ -77,14 +81,14 @@ footer{
     position: fixed;
     z-index: 1;
     top: 48%;
-    left: -100px;
+    left: -112px;
     color: #fff;
     transform: rotate(-90deg);
     display: flex;
     align-items: baseline;
 }
 .smm-nav > p{
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     margin-right: 8px;
 }
@@ -94,12 +98,43 @@ footer{
     height: 4px;
 }
 .media-icons {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0 10px;
 }
 .svg-inline--fa {
     width: 26px;
-    margin: 0 4px;
+    margin: 0 8px;
+}
+
+.smallNav{
+    position: fixed;
+    z-index: 1;
+    top: 52%;
+    right: -20px;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+.smallMenuItem{
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 50%;
+    border: 2px solid #e3e2e2;
+}
+.smallMenuItem:checked{
+    background: #e3e2e2;
+}
+
+
+/*      GAMES       */
+
+.games-content{
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
 }
 
 /*      CONTACT      */
@@ -118,6 +153,7 @@ footer{
 #gallery{
 background: darksalmon;
 }
+
 .contacts-main{
     display: flex;
     justify-content: center;
@@ -171,7 +207,7 @@ form{
 }
 .message-input{
     resize: none;
-    width: 574px;
+    width: 100%;
     padding: 12px 4px 8px;
     font-size: 14px;
     background-color: rgba(51, 47, 47, 0.575);
@@ -229,7 +265,7 @@ form{
 
 
 
-@media (max-width: 1340px) {
+@media (max-width: 1380px) {
     /*      CONTACT     */
     .contacts-main{
         flex-direction: column;
@@ -239,21 +275,85 @@ form{
         padding-bottom: 40px;
     }
     .map-container {
-         margin-left: 0;
+        margin-left: 0;
     }
 }
-@media (max-width: 460px) {
+@media (max-width: 750px ) {
+    #menu{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
+    .nameEmail{
+        flex-direction: column;
+    }
+    .name-input {
+        margin-bottom: 20px;
+    }
+    .message-form{
+        width: 480px;
+    }
+
+}
+@media (max-width: 610px) {
+    /*      CONTACT     */
+    .message-form{
+        width: 390px;
+    }
+    .smm-nav{
+        left: -138px;
+    }
+    .smallNav{
+        right: -40px;
+    }
+    .map-container>iframe{
+        width: 100%;
+    }
+    .map-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 490px) {
+    h2{
+        font-size: 40px;
+    }
     /*      CONTACT     */
     #contact{
-        background-position-x: -270px;
+        background-position-x: -160px !important;
     }
-    .sendBtn{
-        width: 280px;
-        border: 1px solid #fff;
-        padding: 10px 4px;
-        font-size: 14px;
-        background-color: rgba(41, 38, 38, 0.205);
-        color: #fff;
+    .message-form{
+        width: 300px;
+    }
+    .phone-address>p:first-child {
+        margin-right: 20px;
+    }
+    .map-container {
+        width: 300px;
+    }
+    .phone-address p{
+        font-size: 12px;
     }
 }
-
+@media (max-width: 380px) {
+    /*      CONTACT     */
+    #contact{
+        background-position-x: -160px !important;
+    }
+    .message-form, .name-input, .email-input, .sendBtn{
+        width: 240px;
+    }
+    .name-form, .email-form {
+        width: 240px;
+    }
+    .map-container {
+        width: 240px;
+    }
+    .smm-nav{
+        left: -146px;
+    }
+    .smallNav{
+        right: -46px;
+    }
+}
