@@ -103,7 +103,7 @@ footer{
 }
 
 /*      CONTACT      */
-#contact, #games, #gallery, #home{
+.content{
     width: 100%;
     height: calc(100vh - 160px);
     background-size: cover !important;
@@ -246,6 +246,14 @@ form{
     /*      CONTACT     */
     #contact{
         background-position-x: -270px;
+    }
+    .sendBtn{
+        width: 280px;
+        border: 1px solid #fff;
+        padding: 10px 4px;
+        font-size: 14px;
+        background-color: rgba(41, 38, 38, 0.205);
+        color: #fff;
     }
 }
 
