@@ -335,6 +335,9 @@ form{
     .phone-address p{
         font-size: 12px;
     }
+    .map-container {
+        padding-bottom: 100px;
+    }
 }
 @media (max-width: 380px) {
     /*      CONTACT     */
