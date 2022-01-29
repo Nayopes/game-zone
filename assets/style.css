@@ -140,7 +140,7 @@ footer{
 /*      CONTACT      */
 .content{
     width: 100%;
-    height: calc(100vh - 160px);
+    min-height: calc(100vh - 140px);
     background-size: cover !important;
     padding-top: 160px;
 }
