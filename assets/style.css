@@ -368,7 +368,7 @@ form{
         justify-content: center;
     }
     .gamesSubTitle {
-        margin: 100px 10px 10px;
+        margin: 100px 20px 10px;
     }
 }
 @media (max-width: 610px) {
