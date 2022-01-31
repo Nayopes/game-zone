@@ -76,7 +76,15 @@ footer{
     color: #fff;
 }
 
-
+.smm-media{
+    display: none;
+    align-items: baseline;
+    color: #fff;
+    margin: 18px auto;
+}
+.media-icons>a{
+    color: #fff !important;
+}
 .smm-nav{
     position: fixed;
     z-index: 1;
@@ -87,7 +95,7 @@ footer{
     display: flex;
     align-items: baseline;
 }
-.smm-nav > p{
+.smm-nav > p, .smm-media > p{
     font-size: 14px;
     text-transform: uppercase;
     margin-right: 8px;
@@ -342,14 +350,15 @@ form{
         display: none;
     }
     .smm-nav{
-        position: absolute;
-        left: 29%;
-        top: 770%;
-        transform: rotate(0);
+        display: none;
+    }
+    .smm-media{
+        display: flex;
     }
     .map-container{
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 40px;
     }
     .phone-address{
         margin-top: 25px;
@@ -366,10 +375,6 @@ form{
     /*      CONTACT     */
     .message-form{
         width: 390px;
-    }
-    .smm-nav{
-        left: 23%;
-        top: 790%;
     }
     .map-container>iframe{
         width: 100%;
@@ -394,40 +399,30 @@ form{
     #contact{
         background-position-x: -160px !important;
     }
+    .name-input, .email-input{
+        width: 300px;
+    }
+    .name-form, .email-form {
+        width: 300px;
+    }
     .message-form{
         width: 300px;
+    }
+    .sendBtn{
+        width: 200px;
     }
     .phone-address>p:first-child {
         margin-right: 20px;
     }
     .map-container {
         width: 300px;
-    }
-    .map-container {
-        padding-bottom: 100px;
-    }
-    .smm-nav{
-        left: 18%;
-        top: 774%;
+        padding-bottom: 20px;
     }
 }
 @media (max-width: 380px) {
     /*      CONTACT     */
     #contact{
         background-position-x: -160px !important;
-    }
-    .message-form, .name-input, .email-input, .sendBtn{
-        width: 240px;
-    }
-    .name-form, .email-form {
-        width: 240px;
-    }
-    .map-container {
-        width: 240px;
-    }
-    .smm-nav{
-        left: 5%;
-        top: 774%;
     }
     .smm-line{
         width: 80px;
