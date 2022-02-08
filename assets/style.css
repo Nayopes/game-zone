@@ -89,12 +89,6 @@ h2 {
     font-weight: inherit;
     text-align: center;
 }
-h3 {
-    font-weight: 300;
-    font-size: 45px;
-    margin-top: 20px;
-    text-align: center;
-}
 footer{
     text-align: center;
     color: #fff;
@@ -173,34 +167,102 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
-.gameItem{
-    padding: 10px;
-    background-color: rgba(47, 47, 47, 0.38);
-    max-width: 286px;
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 6px 12px 3px rgba(76, 76, 76, 0.56);
-    margin: 14px;
+.gamesMain{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: .5s;
+    overflow: hidden;
+    padding: 40px;
 }
-.gamesSubTitle{
-    font-size: 18px;
-    margin: 50px 0;
+.gameItem{
+    position: relative;
+    height: 270px;
+    width: 270px;
+    background: #000;
+}
+.gamesMain:hover .gameItem{
+    transform: rotateY(25deg);
+}
+.gamesMain .gameItem:hover ~ .gameItem{
+    transform: rotateY(-25deg);
+}
+.gamesMain .gameItem:hover{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+} 
+.imgDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gameImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.imgDiv:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #662d65, #000);
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+.gameItem:hover .imgDiv:before{
+    opacity: 1;
+}
+
+.gameItemContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: right;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .gameTitle{
     font-size: 20px;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-bottom: 10px;
+    transform: translateY(160px);
 }
-.gameImg{
-    width: 286px;
-    height: 286px;
+.gameItem:hover .gameTitle{
+    transform: translateY(0);
+    transition-delay: .3s;
 }
-.gameItem p{
-    margin: 15px 0;
+.gameItemContent p{
+    font-size: 14px;
+    transition: .5s;
+    transform: translateY(160px);
 }
-.gamesMain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.gameItem:hover .gameItemContent p{
+    transform: translateY(0);
+    transition-delay: .4s;
 }
+
+
+
+
 .moreGamesBtn{
     background-color: rgba(47, 47, 47, 0.38);
     border: 2px solid #fff;
