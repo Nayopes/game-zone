@@ -3,38 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Game Zone</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <link rel="stylesheet" href="assets/style.css">
+    <title>Game Zone</title>
+    <link rel = "icon" href ="https://fontawesome.com/v5.15/icons/gamepad?style=solid"
+          type = "image/x-icon">
 </head>
 
 <body>
         <header>
             <nav class="header">
-                <ul id="menu">
-                    <li data-menuanchor="home">
-                        <a href="#" title="First Section">HOME</a>
-                    </li>
-                    <li data-menuanchor="games">
-                        <a href="#games" title="Second Section">GAMES</a>
-                    </li>
-                    <li data-menuanchor="gallery">
-                        <a href="#gallery" title="Second Section">GALLERY</a>
-                    </li>
-                    <li data-menuanchor="contacts">
-                        <a href="#contact" title="Fourth Section">CONTACTS</a>
-                    </li>
-                </ul>
+                <div>
+                    <img src="assets/img/logo-removebg-preview.png" class="logo">
+                </div>
+                    <ul id="menu">
+                        <li data-menuanchor="home">
+                            <a href="#" title="First Section">HOME</a>
+                        </li>
+                        <li data-menuanchor="games">
+                            <a href="#games" title="Second Section">GAMES</a>
+                        </li>
+                        <li data-menuanchor="gallery">
+                            <a href="#gallery" title="Second Section">GALLERY</a>
+                        </li>
+                        <li data-menuanchor="contacts">
+                            <a href="#contact" title="Fourth Section">CONTACTS</a>
+                        </li>
+                    </ul>
+                <div class="burgerMenu" id="burgerMenu">
+                    <i class="fas fa-bars"></i>
+                    <div class="sideMenuMain" id="sideMenuMain">
+                        <ul id="sideMenu">
+                            <li data-menuanchor="home">
+                                <a href="#" title="First Section">HOME</a>
+                            </li>
+                            <li data-menuanchor="games">
+                                <a href="#games" title="Second Section">GAMES</a>
+                            </li>
+                            <li data-menuanchor="gallery">
+                                <a href="#gallery" title="Second Section">GALLERY</a>
+                            </li>
+                            <li data-menuanchor="contacts">
+                                <a href="#contact" title="Fourth Section">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
+
         <div class="smm-nav">
             <p>follow us</p>
             <div class="smm-line"></div>
             <div class="media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-tiktok"></i>
+                <a href="https://www.facebook.com/pandagamezone/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/panda_gamezone/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/pandagamezone/" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
+        </div>
+        <div class="smallNav">
+            <a href="#contact" ><div class="smallMenuItem"></div></a>
+            <a href="#gallery" ><div class="smallMenuItem"></div></a>
+            <a href="#games" ><div class="smallMenuItem"></div></a>
+            <a href="#" ><div class="smallMenuItem"></div></a>
         </div>
 
         <section id="home" class="content">
@@ -43,9 +76,44 @@
             </div>
         </section>
 
-        <section id="games" class="content">
+        <section id="games" class="content" style="background: url('assets/img/white1.png') no-repeat;">
             <div>
-                <h2 class="content-title">games</h2>
+                <h2 class="content-title" id="gamesTitle">Games</h2>
+                <div class="games-content">
+                    <p class="gamesSubTitle">In our game zone you can enjoy the next games:</p>
+                    <div class="gamesMain">
+                        <div class="gameItem">
+                            <div class="imgDiv">
+                                <img src="assets/img/fifa22.png" alt="game" class="gameImg">
+                            </div>
+                            <div class="gameItemContent">
+                                <h3 class="gameTitle">FIFA 22 PS5™</h3>
+                                <p>Type: Sport</p>
+                            </div>
+                        </div>
+
+                        <div class="gameItem">
+                            <div class="imgDiv">
+                                <img src="assets/img/dirt.png" alt="game" class="gameImg">
+                            </div>
+                            <div class="gameItemContent">
+                                <h3 class="gameTitle">Dirt 5</h3>
+                                <p>Type: Unique</p>
+                            </div>
+                        </div>
+
+                        <div class="gameItem">
+                            <div class="imgDiv">
+                                <img src="assets/img/naruto.png" alt="game" class="gameImg">
+                            </div>
+                            <div class="gameItemContent">
+                                <h3 class="gameTitle">NARUTO TO BORUTO: SHINOBI STRIKER</h3>
+                                <p>Type: Action</p>
+                            </div>
+                        </div>
+                    </div>
+<!--                    <button class="moreGamesBtn">SEE MORE</button>-->
+                </div>
             </div>
         </section>
 
@@ -55,10 +123,10 @@
             </div>
         </section>
 
-        <section  id="contact" class="content" style="background: url('assets/img/game2.jpg') no-repeat;" >
-            <h2 class="content-title">CONTACTS</h2>
+        <section  id="contact" class="content" style="background: url('assets/img/white11.png') no-repeat;" >
+            <h2 class="contact-title">CONTACTS</h2>
             <div class="contacts-main">
-                <div>
+                <div class="contact-forms">
                     <form>
                         <div class="nameEmail">
                             <div class="name-form">
@@ -74,6 +142,9 @@
                             <textarea name="name" class="message-input"></textarea>
                             <label for="name" class="name-label">Your Message</label>
                         </div>
+                        <div>
+                            <input type="button" value="SEND" class="sendBtn">
+                        </div>
                     </form>
                 </div>
                 <div class="map-container">
@@ -85,8 +156,16 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.32734007005104!2d44.48449699714721!3d40.150955064928105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abdb3bc054ac1%3A0x86d5d87813d8c141!2sPanda%20Game%20Zone!5e0!3m2!1sen!2s!4v1642157915813!5m2!1sen!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                <div class="smm-media">
+                    <p>follow us</p>
+                    <div class="smm-line"></div>
+                    <div class="media-icons">
+                        <a href="https://www.facebook.com/pandagamezone/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/panda_gamezone/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/pandagamezone/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
             </div>
-
             <footer>
                 <p>Created by փիսո ♥</p>
             </footer>
